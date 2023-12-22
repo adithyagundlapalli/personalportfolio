@@ -57,13 +57,29 @@ body {
 }
 
 /* INOFRMATION */
-section#info {
-  width: 1000px;
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15%;
+}
+
+.hi {
+  border-bottom: 5px solid white;
+  border-left: 7px solid white;
+  margin-right: 110px;
+  padding-left: 10px;
+}
+.description {
+  width: 1500px;
   height: auto;
   margin: auto;
   color: #fff;
-  position: relative;
   margin-left: 200px;
-  padding-top: 350px;
   line-height: 30px;
+}
+
+img.pfp {
+  width: 40%;
+  border-radius: 100%;
 }
