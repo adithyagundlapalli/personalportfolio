@@ -1,0 +1,69 @@
+body {
+  background: #000000 url("img/background.jpeg") no-repeat;
+  background-size: cover;
+}
+
+* {
+  font-family: verdana;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+/* comment */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 200px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+.menu li a {
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+
+.menu li a:hover {
+  color: #12499f;
+}
+
+/* INOFRMATION */
+section#info {
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  color: #fff;
+  position: relative;
+  margin-left: 200px;
+  padding-top: 350px;
+  line-height: 30px;
+}
