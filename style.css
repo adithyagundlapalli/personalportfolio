@@ -102,3 +102,13 @@ img.pfp {
   text-decoration: none;
   margin: 40px 15px 50px 0;
 }
+
+.information {
+  text-align: center;
+  margin: 300px;
+  color: #fff;
+}
+
+.tabs p {
+  display: inline-block;
+}
