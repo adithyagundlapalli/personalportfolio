@@ -1,5 +1,5 @@
 body {
-  background: #000000 url("img/background.jpeg") no-repeat;
+  background: #000000 no-repeat;
   background-size: cover;
 }
 
@@ -11,7 +11,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* comment */
+/* navigation bar */
 
 .header {
   position: fixed;
@@ -56,7 +56,7 @@ body {
   color: #12499f;
 }
 
-/* INOFRMATION */
+/* hero section */
 .info {
   display: flex;
   align-items: center;
@@ -103,12 +103,69 @@ img.pfp {
   margin: 40px 15px 50px 0;
 }
 
-.information {
+/* about me page */
+
+.center-align {
   text-align: center;
-  margin: 300px;
+}
+
+.heading {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.desc {
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
   color: #fff;
 }
 
 .tabs p {
   display: inline-block;
+  align-items: center;
+  color: #fff;
+}
+
+.t {
+  margin: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.t::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #12499f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.t.active-link::after {
+  width: 50%;
+}
+
+.tab-contents p {
+  color: #12499f;
+  font-size: 20px;
+  margin-left: 618px;
+}
+
+.tab-contents ul li {
+  margin-left: 650px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
 }

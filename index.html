@@ -58,26 +58,94 @@
         </div>
       </section>
     </main>
-  </body>
 
-  <div id="about">
-    <div class="information">
-      <h1>About Me</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
+    <div id="about">
+      <div class="information">
+        <div class="center-align">
+          <h1 class="heading">About Me</h1>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in repreh
+            enderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
 
-      <div class="tabs">
-        <p>Skills</p>
-        <p>Experience</p>
-        <p>Education</p>
+          <div class="tabs">
+            <p class="t active-link" onclick="opentab('skills')">Skills</p>
+            <p class="t" onclick="opentab('experience')">Experience</p>
+            <p class="t" onclick="opentab('education')">Education</p>
+          </div>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <p>Programming Languages:</p>
+          <ul class="skills-content">
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <p>Experience</p>
+          <ul class="skills-content"></ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <p>Education</p>
+          <ul class="skills-content">
+            <li>Mountain House High School</li>
+            <li>University of California: Santa Cruz</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("t");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <div>
+      <h1>HI</h1>
+    </div>
+    <div>
+      <h1>HI</h1>
+    </div>
+    <div>
+      <h1>HI</h1>
+    </div>
+    <div>
+      <h1>HI</h1>
+    </div>
+    <div>
+      <h1>HI</h1>
+    </div>
+    <div>
+      <h1>HI</h1>
+    </div>
+    <div>
+      <h1>HI</h1>
+    </div>
+    <div>
+      <h1>HI</h1>
+    </div>
+    <div>
+      <h1>HI</h1>
+    </div>
+  </body>
 </html>
