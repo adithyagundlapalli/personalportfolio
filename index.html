@@ -12,6 +12,10 @@
 
     <!--comments-->
   </head>
+
+  <script src="script.js"></script>
+
+  <!--NAVIGATION BAR-->
   <body id="home">
     <header class="header">
       <a href="#" class="logo">Adithya</a>
@@ -20,11 +24,13 @@
         <ul class="menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
+
+    <!--HERO SECTION-->
 
     <main>
       <section class="info">
@@ -59,6 +65,7 @@
       </section>
     </main>
 
+    <!--ABOUT ME SECTION-->
     <div id="about">
       <div class="information">
         <div class="center-align">
@@ -91,7 +98,9 @@
         </div>
         <div class="tab-contents" id="experience">
           <p>Experience</p>
-          <ul class="skills-content"></ul>
+          <ul class="skills-content">
+            <li>Web Development Intern @ Intern Protege</li>
+          </ul>
         </div>
         <div class="tab-contents" id="education">
           <p>Education</p>
@@ -103,49 +112,90 @@
       </div>
     </div>
 
-    <script>
-      var tablinks = document.getElementsByClassName("t");
-      var tabcontents = document.getElementsByClassName("tab-contents");
+    <!--PORTFOLIO SECTION-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">Portfolio</h1>
+        <div class="project-list">
+          <div class="project">
+            <img
+              class="proj-img"
+              src="img/calculator.jpeg"
+              alt="calculator project"
+            />
+            <p class="proj-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
 
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
+          <div class="project">
+            <img
+              class="proj-img"
+              src="img/stock.jpeg"
+              alt="stock predictor project"
+            />
 
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
+            <p class="proj-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div>
-      <h1>HI</h1>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <h1 class="sub-title">Contact Me</h1>
+          <div class="contact-left">
+            <p>adithya.3035@gmail.com</p>
+
+            <div class="social-icons">
+              <a href="https://github.com/adithyagundlapalli"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/adithya01/"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/adithya.gundlapalli/"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a href="https://twitter.com/adithyag01"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+            </div>
+            <a href="" class="btn btn2">Download Resume</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="your name" required />
+              <input
+                type="text"
+                name="email"
+                placeholder="your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="your message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-      <h1>HI</h1>
-    </div>
-    <div>
-      <h1>HI</h1>
-    </div>
-    <div>
-      <h1>HI</h1>
-    </div>
-    <div>
-      <h1>HI</h1>
-    </div>
-    <div>
-      <h1>HI</h1>
-    </div>
-    <div>
-      <h1>HI</h1>
-    </div>
-    <div>
-      <h1>HI</h1>
-    </div>
-    <div>
-      <h1>HI</h1>
+
+    <div class="copyright">
+      <p>Copyright © Adithya. Made with love by Adithya Gundlapalli</p>
     </div>
   </body>
 </html>
