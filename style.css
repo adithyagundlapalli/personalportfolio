@@ -286,3 +286,22 @@ form textarea {
   font-size: 18px;
   border-radius: 6px;
 }
+
+.copyright {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+}
+
+/* Adjust the padding-top to account for the fixed header */
+#about,
+#portfolio,
+#contact {
+  padding-top: 100px;
+  /* Other styles */
+}
+
+/* To account for the fixed position of the header */
