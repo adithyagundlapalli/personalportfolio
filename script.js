@@ -12,3 +12,22 @@ function opentab(tabname) {
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+const icon = document.getElementById("theme-icon");
+
+function themeSwitch() {
+    document.body.classList.toggle("light-theme");
+    console.log("Theme switch function called!");
+
+    if (document.body.classList.contains("light-theme")) {
+        document.getElementById("theme-icon").src = "img/moon.png";
+    } else {
+        document.getElementById("theme-icon").src = "img/sun.png";
+    }
+}
+
+
+
+
+
+     

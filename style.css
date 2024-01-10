@@ -1,5 +1,5 @@
 body {
-  background: #05051f no-repeat;
+  background: var(--primary-color) no-repeat;
   background-size: cover;
 }
 
@@ -13,13 +13,13 @@ body {
 
 /* navigation bar */
 
-.header {
+#header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 20px 200px;
-  background: black;
+  background: var(--primary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,7 +28,7 @@ body {
 
 .logo {
   font-size: 32px;
-  color: white;
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: 700;
   margin-left: 0px;
@@ -43,17 +43,36 @@ body {
   display: inline-block;
   padding: 0px 20px;
   font-size: 18px;
-  color: white;
+  color: var(--secondary-color);
   font-weight: 500;
 }
 
 .menu li a {
   transition: all 0.3s ease 0s;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .menu li a:hover {
   color: #12499f;
+}
+
+#theme-icon {
+  width: 30px;
+  cursor: pointer;
+}
+s :root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+.dark-theme {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+.light-theme {
+  --primary-color: #fff;
+  --secondary-color: #000;
 }
 
 /* Hero Section */
@@ -75,7 +94,7 @@ body {
 }
 
 .intro {
-  color: #fff;
+  color: var(--secondary-color);
   margin-left: 200px;
   line-height: 35px;
   padding-bottom: 5%;
@@ -99,7 +118,7 @@ img.pfp {
   height: 50px;
   background: transparent;
   font-size: 25px;
-  color: #fff;
+  color: var(--secondary-color);
   text-decoration: none;
   margin: 40px 15px 50px 0;
   transition: 0.5s;
@@ -119,7 +138,7 @@ img.pfp {
 h1.heading {
   margin-bottom: 50px;
   text-align: center;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 40px;
 }
 
@@ -127,13 +146,13 @@ h1.heading {
   margin-left: 300px;
   margin-right: 300px;
   text-align: center;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .tabs p {
   display: inline-block;
   align-items: center;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .t {
@@ -167,7 +186,7 @@ h1.heading {
 .tab-contents ul li {
   margin-left: 650px;
   margin-top: 10px;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .tab-contents {
@@ -181,7 +200,7 @@ h1.heading {
 /* Portfolio Section */
 
 .subtitle {
-  color: #ffffff;
+  color: var(--secondary-color);
   text-align: center;
   margin-top: 150px;
   font-size: 40px;
@@ -193,7 +212,7 @@ img.proj-img {
 }
 
 .proj-description {
-  color: #fff;
+  color: var(--secondary-color);
   margin-left: 200px;
   line-height: 35px;
   text-align: left;
@@ -218,7 +237,7 @@ img.proj-img {
 }
 
 h1.sub-title {
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 40px;
   text-align: center;
   margin-bottom: 50px;
@@ -227,7 +246,7 @@ h1.sub-title {
 
 .contact-left {
   flex-basis: 35%;
-  color: #fff;
+  color: var(--secondary-color);
   float: left;
   margin-top: 50px;
 }
@@ -250,7 +269,7 @@ h1.sub-title {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: #fff;
+  color: var(--secondary-color);
   display: inline-block;
   transition: 0.5s;
   margin-bottom: 30px;
