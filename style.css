@@ -8,7 +8,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  letter-spacing: 1px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* navigation bar */
@@ -19,18 +22,19 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 200px;
-  background: var(--primary-color);
+  background: var(--third-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  letter-spacing: 5px;
 }
 
-.logo {
+img.logo {
   font-size: 32px;
   color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: 700;
+  border-radius: 50px;
+  width: 50%;
   margin-left: 0px;
   cursor: pointer;
 }
@@ -50,6 +54,7 @@ body {
 .menu li a {
   transition: all 0.3s ease 0s;
   color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .menu li a:hover {
@@ -60,19 +65,22 @@ body {
   width: 30px;
   cursor: pointer;
 }
-s :root {
+:root {
   --primary-color: #000;
   --secondary-color: #fff;
+  --third-color: #161616;
 }
 
 .dark-theme {
   --primary-color: #000;
   --secondary-color: #fff;
+  --third-color: #161616;
 }
 
 .light-theme {
   --primary-color: #fff;
   --secondary-color: #000;
+  --third-color: #e4e0da;
 }
 
 /* Hero Section */
@@ -81,6 +89,7 @@ s :root {
   align-items: center;
   justify-content: flex-end;
   padding: 15%;
+  letter-spacing: 1.5px;
 }
 
 .hi {
@@ -91,6 +100,7 @@ s :root {
 .name {
   font-size: 40px;
   padding-bottom: 5%;
+  color: #003893;
 }
 
 .intro {
@@ -100,12 +110,12 @@ s :root {
   padding-bottom: 5%;
 }
 
-img.pfp {
+.pfp {
   width: 40%;
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid #12499f;
-  box-shadow: 0 0 60px #12499f;
+  box-shadow: 0 0 90px #12499f;
 }
 
 .icons {
@@ -143,10 +153,12 @@ h1.heading {
 }
 
 .desc {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 400px;
+  margin-right: 400px;
   text-align: center;
   color: var(--secondary-color);
+  letter-spacing: 1.5px;
+  line-height: 2;
 }
 
 .tabs p {
@@ -207,14 +219,18 @@ h1.heading {
 }
 
 img.proj-img {
-  width: 200px;
+  width: 300px;
   float: left;
+  border-radius: 50%;
+  border: 2px solid #12499f;
+  box-shadow: 0 0 60px #12499f;
 }
 
-.proj-description {
+.proj {
   color: var(--secondary-color);
-  margin-left: 200px;
-  line-height: 35px;
+  margin-left: 100px;
+  letter-spacing: 1.5px;
+  line-height: 2;
   text-align: left;
 }
 
@@ -248,7 +264,7 @@ h1.sub-title {
   flex-basis: 35%;
   color: var(--secondary-color);
   float: left;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .contact-right {
@@ -271,7 +287,7 @@ h1.sub-title {
   margin-right: 15px;
   color: var(--secondary-color);
   display: inline-block;
-  transition: 0.5s;
+  transition: 0.1s;
   margin-bottom: 30px;
 }
 
@@ -280,13 +296,24 @@ h1.sub-title {
   transform: translateY(-5px);
 }
 
-.btn.btn2 {
+.btn {
   padding: 13px;
   display: inline-block;
   text-decoration: none;
   color: #fff;
   background: #12499f;
   border-radius: 10px;
+}
+
+.btn2 {
+  padding: 13px;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #12499f;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .contact-right form {
@@ -304,6 +331,8 @@ form textarea {
   color: #fff;
   font-size: 18px;
   border-radius: 6px;
+  border: 1px solid #12499f;
+  box-shadow: 10px 3px 30px #12499f;
 }
 
 .copyright {
@@ -315,12 +344,28 @@ form textarea {
   font-weight: 300;
 }
 
+#msg {
+  color: #12499f;
+  margin-top: 10px;
+  display: block;
+}
 /* Adjust the padding-top to account for the fixed header */
-#about,
 #portfolio,
 #contact {
-  padding-top: 100px;
+  padding-top: 50px;
   /* Other styles */
+}
+
+#contact {
+  padding-bottom: 50px;
+}
+
+#home {
+  padding-bottom: -100px;
+}
+
+#about {
+  padding-top: 100px;
 }
 
 /* css for small screen adjustement */
