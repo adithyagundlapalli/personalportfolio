@@ -69,18 +69,14 @@ img.logo {
   --primary-color: #000;
   --secondary-color: #fff;
   --third-color: #161616;
-}
-
-.dark-theme {
-  --primary-color: #000;
-  --secondary-color: #fff;
-  --third-color: #161616;
+  --fourth-color: #262626;
 }
 
 .light-theme {
   --primary-color: #fff;
   --secondary-color: #000;
-  --third-color: #e4e0da;
+  --third-color: #e7e7e7;
+  --fourth-color: #e7e7e7;
 }
 
 /* Hero Section */
@@ -248,7 +244,7 @@ img.proj-img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 100px auto;
+  margin: 200px auto;
   width: 75%;
 }
 
@@ -275,6 +271,16 @@ h1.sub-title {
 
 .contact-left p {
   margin-top: 30px;
+}
+
+.gmail p i {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.gmail p {
 }
 
 .social-icons {
@@ -325,10 +331,10 @@ form textarea {
   width: 100%;
   border: 0;
   outline: none;
-  background: #262626;
+  background: var(--fourth-color);
   padding: 15px;
   margin: 15px 0;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 18px;
   border-radius: 6px;
   border: 1px solid #12499f;
