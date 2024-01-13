@@ -13,6 +13,7 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+//Dark & Light Theme
 const icon = document.getElementById("theme-icon");
 
 function themeSwitch() {
@@ -25,6 +26,9 @@ function themeSwitch() {
         document.getElementById("theme-icon").src = "img/sun.png";
     }
 }
+
+
+//Dropdown Menu
 
 
 

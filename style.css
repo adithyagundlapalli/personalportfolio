@@ -34,7 +34,7 @@ img.logo {
   font-size: 32px;
   color: var(--secondary-color);
   border-radius: 50px;
-  width: 50%;
+  width: 40%;
   margin-left: 0px;
   cursor: pointer;
 }
@@ -62,6 +62,7 @@ img.logo {
 }
 
 #theme-icon {
+  margin-left: 280px;
   width: 30px;
   cursor: pointer;
 }
@@ -374,10 +375,63 @@ form textarea {
   padding-top: 100px;
 }
 
-/* css for small screen adjustement */
+/* css for small screen adjustment */
 
-@media screen and (max-width: 1000px) {
-  #home {
-    font-size: 20px;
+nav .bx {
+  color: #fff;
+  display: none;
+}
+
+@media screen and (max-width: 1669px) {
+  #theme-icon {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  nav {
+    font-size: 80px;
+
+    color: var(--secondary-color);
+  }
+
+  nav .bx {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    background: #003893;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .bx {
+    position: absolute;
+    font-size: 30px;
+    top: 40px;
+    left: 40px;
+    cursor: pointer;
+  }
+
+  #theme-icon {
+    color: #fff;
+    position: absolute;
+    margin-top: 40px;
+    left: 45px;
+    cursor: pointer;
+    margin-left: 0px;
   }
 }
