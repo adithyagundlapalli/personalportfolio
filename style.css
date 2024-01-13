@@ -80,6 +80,9 @@ img.logo {
   --fourth-color: #e7e7e7;
 }
 
+.bx.bx-menu {
+  color: var(--secondary-color);
+}
 /* Hero Section */
 .info {
   display: flex;
@@ -150,12 +153,13 @@ h1.heading {
 }
 
 .desc {
-  margin-left: 400px;
-  margin-right: 400px;
+  margin-left: 350px;
+  margin-right: 350px;
   text-align: center;
   color: var(--secondary-color);
   letter-spacing: 1.5px;
   line-height: 2;
+  font-size: 20px;
 }
 
 .tabs p {
@@ -166,7 +170,7 @@ h1.heading {
 
 .t {
   margin: 50px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -189,21 +193,22 @@ h1.heading {
 .tab-contents p {
   color: #12499f;
   font-size: 20px;
-  margin-left: 618px;
 }
 
 .tab-contents ul li {
-  margin-left: 650px;
   margin-top: 10px;
   color: var(--secondary-color);
+  list-style: none;
 }
 
 .tab-contents {
   display: none;
+  text-decoration: none;
 }
 
 .tab-contents.active-tab {
   display: block;
+  text-decoration: none;
 }
 
 /* Portfolio Section */
@@ -254,7 +259,7 @@ h1.sub-title {
   font-size: 40px;
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .contact-left {
@@ -279,9 +284,6 @@ h1.sub-title {
   color: var(--secondary-color);
   font-size: 25px;
   margin-right: 5px;
-}
-
-.gmail p {
 }
 
 .social-icons {
@@ -382,17 +384,82 @@ nav .bx {
   display: none;
 }
 
+/* HOME PAGE RESPONSIVENESS */
+
+@media screen and (max-width: 900px) {
+  img.logo {
+    width: 50%; /* Adjust logo size for smaller screens */
+  }
+
+  .pfp {
+    width: 50%;
+  }
+
+  .info {
+    padding: 10%; /* Adjust padding for smaller screens */
+  }
+
+  .hi,
+  .name {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .intro {
+    margin-left: 20px;
+    margin-top: 70px; /* Adjust margin for smaller screens */
+  }
+
+  .icons a {
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+
+  /* Add more responsive adjustments as needed */
+}
+
+@media screen and (max-width: 750px) {
+  img.logo {
+    width: 50%; /* Adjust logo size for smaller screens */
+  }
+
+  .pfp {
+    width: 50%;
+    margin-right: 10px;
+  }
+
+  .info {
+    padding: 10%; /* Adjust padding for smaller screens */
+  }
+
+  .hi,
+  .name {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .intro {
+    margin-left: 30px;
+    margin-top: 70px; /* Adjust margin for smaller screens */
+  }
+
+  .icons a {
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+
+  /* Add more responsive adjustments as needed */
+}
+
 @media screen and (max-width: 1669px) {
   #theme-icon {
     margin-left: 200px;
+  }
+  nav .bx {
+    display: none;
   }
 }
 
 @media screen and (max-width: 1500px) {
   nav {
     font-size: 80px;
-
-    color: var(--secondary-color);
+    color: #fff;
   }
 
   nav .bx {
@@ -413,9 +480,20 @@ nav .bx {
     transition: right 0.5s;
   }
 
+  .menu li a {
+    transition: all 0.3s ease 0s;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu li a:hover {
+    color: #fff;
+  }
+
   nav ul li {
     display: block;
     margin: 25px;
+    color: #fff;
   }
 
   nav ul .bx {
@@ -433,5 +511,155 @@ nav .bx {
     left: 45px;
     cursor: pointer;
     margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .desc {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .proj-title {
+    font-size: 24px;
+  }
+  .proj-description {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .desc {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .desc {
+      margin-left: 100px;
+      margin-right: 100px;
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .desc {
+      margin-left: 50px;
+      margin-right: 50px;
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 574px) {
+    .desc {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 14px;
+    }
+
+    .tabs p {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 522px) {
+    .desc {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 16px;
+    }
+
+    .tabs p {
+      font-size: 16px;
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 431px) {
+    .desc {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 16px;
+    }
+
+    .tabs p {
+      font-size: 16px;
+      margin-right: 5px;
+    }
+  }
+
+  /* PORTFOLIO PAGE RESPONSIVENESS */
+
+  @media screen and (max-width: 767px) {
+    .subtitle {
+      margin-top: 100px;
+    }
+
+    .project {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+
+    .proj-img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .proj {
+      margin-left: 0;
+      text-align: center;
+    }
+
+    #portfolio {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  /* CONTACT PAGE RESPONSIVENESS */
+
+  @media screen and (max-width: 1800px) {
+    .contact-left,
+    .contact-right {
+      width: 100%;
+      float: none;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .contact-right {
+      margin-top: 40px;
+      margin-left: 0;
+    }
+
+    .contact-left p {
+      margin-top: 20px;
+    }
+
+    .gmail p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-icons {
+      text-align: center;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    .btn,
+    .btn2 {
+      margin-top: 20px;
+    }
+
+    .contact-right form {
+      margin-left: 0;
+    }
+
+    .sub-title {
+      margin-top: 200px;
+    }
   }
 }

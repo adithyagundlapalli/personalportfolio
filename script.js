@@ -27,11 +27,4 @@ function themeSwitch() {
     }
 }
 
-
-//Dropdown Menu
-
-
-
-
-
      
