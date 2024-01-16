@@ -251,6 +251,7 @@ img.proj-img {
   align-items: center;
   justify-content: center;
   margin: 200px auto;
+  margin-top: 20px;
   width: 75%;
 }
 
@@ -661,5 +662,53 @@ nav .bx {
     .sub-title {
       margin-top: 200px;
     }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #header {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+  }
+
+  nav .bx {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 160px;
+  }
+
+  img.logo {
+    display: none; /* Adjust logo size for smaller screens */
+  }
+
+  .pfp {
+    margin-top: 80px;
+    width: 70%;
+    margin-right: 10px;
+  }
+
+  .info {
+    padding: 5% 5% 10%; /* Adjust padding for smaller screens, adding more bottom padding */
+    flex-direction: column; /* Set flex-direction to column to stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .hi {
+    font-size: 18px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .name {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  .intro {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .icons a {
+    margin: 5px; /* Adjust margin for smaller screens */
   }
 }
