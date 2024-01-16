@@ -251,7 +251,6 @@ img.proj-img {
   align-items: center;
   justify-content: center;
   margin: 200px auto;
-  margin-top: 20px;
   width: 75%;
 }
 
@@ -362,7 +361,7 @@ form textarea {
 /* Adjust the padding-top to account for the fixed header */
 #portfolio,
 #contact {
-  padding-top: 50px;
+  padding-top: 60px;
   /* Other styles */
 }
 
