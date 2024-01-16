@@ -710,4 +710,8 @@ nav .bx {
   .icons a {
     margin: 5px; /* Adjust margin for smaller screens */
   }
+
+  #contact {
+    margin-top: 0px;
+  }
 }
