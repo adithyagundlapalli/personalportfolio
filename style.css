@@ -714,4 +714,15 @@ nav .bx {
   #contact {
     margin-top: 0px;
   }
+
+  .tabs {
+    text-align: center;
+    font-size: 20px;
+  }
+  .tabs p {
+    font-size: 20px;
+  }
+  .t {
+    margin: 15px;
+  }
 }
